@@ -1,0 +1,13 @@
+{
+  "id": "council-1-test",
+  "title": "City Council, District 1",
+  "jurisdiction": "Municipal",
+  "term_length": "4 years",
+  "salary": "$24,000/year",
+  "responsibilities": "City council members vote on ordinances, set the city budget alongside the mayor, and serve as the legislative branch of local government. District 1 representatives advocate for their district's residents at council meetings.",
+  "why_it_matters": "The council approves or rejects spending, zoning changes, and local laws. A single council vote can affect neighborhood character, business permits, and infrastructure priorities.",
+  "key_powers": ["Votes on city ordinances", "Approves annual budget", "Overrides mayoral vetoes (supermajority)", "Holds public hearings on zoning and development"],
+  "this_cycle_context": "Three candidates are competing in an open-seat race following the retirement of the longtime incumbent. District 1 includes the waterfront neighborhood currently under redevelopment.",
+  "sources": ["https://example.gov/city-council", "https://ballotpedia.org/council-1-test"],
+  "last_researched": "2026-04-28"
+}

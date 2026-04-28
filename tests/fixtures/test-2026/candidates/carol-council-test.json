@@ -1,0 +1,18 @@
+{
+  "id": "carol-council-test",
+  "name": "Carol Davis",
+  "race_id": "council-1-test",
+  "party": "Democratic",
+  "incumbent": false,
+  "summary": "Carol Davis is a neighborhood association president and environmental consultant running for City Council District 1.",
+  "background": { "current_role": "Environmental Consultant, Davis Group LLC", "career": ["Environmental consultant (2015–present)"], "education": ["B.S. Environmental Science, State University, 2013"], "prior_offices": [] },
+  "track_record": [{ "claim": "Led successful campaign to designate the District 1 waterfront as a protected green zone in 2024.", "source": "https://testcitygazette.example.com/2024-waterfront" }],
+  "stated_positions": [{ "issue": "Development", "position": "Growth is welcome when it includes community benefits agreements and environmental impact reviews.", "source": "https://caroldavis2026.example.com" }],
+  "endorsements": [{ "endorser": "Sierra Club Test Chapter", "source": "https://sierraclub.example.org/test-2026" }],
+  "campaign_finance": { "total_raised": "$42,000", "top_donors_or_sectors": ["Environmental PACs ($12,000)", "Individual donors ($30,000)"], "source": "https://example.gov/campaign-finance/carol-davis-2026" },
+  "notable_news": [{ "headline": "Davis draws large crowd at District 1 town hall", "date": "2026-02-14", "summary": "Over 200 residents attended Davis's first town hall, focusing on waterfront development.", "source": "https://testcitygazette.example.com/2026-02-14" }],
+  "official_links": { "website": "https://caroldavis2026.example.com", "social": [] },
+  "sources": ["https://caroldavis2026.example.com"],
+  "_failed_sources": [],
+  "last_researched": "2026-04-28"
+}

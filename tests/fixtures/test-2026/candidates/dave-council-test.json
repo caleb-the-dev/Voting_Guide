@@ -1,0 +1,18 @@
+{
+  "id": "dave-council-test",
+  "name": "Dave Wilson",
+  "race_id": "council-1-test",
+  "party": "Republican",
+  "incumbent": false,
+  "summary": "Dave Wilson is a retired police officer and current neighborhood watch captain running for City Council District 1.",
+  "background": { "current_role": "Retired; Neighborhood Watch Captain", "career": ["Test City Police Officer (1998–2022)", "Neighborhood Watch Captain (2022–present)"], "education": ["A.A. Criminal Justice, Community College, 1997"], "prior_offices": [] },
+  "track_record": [{ "claim": "Organized District 1 neighborhood watch network, credited with a 12% reduction in property crime (2023 city report).", "source": "https://example.gov/crime-stats-2023" }],
+  "stated_positions": [{ "issue": "Public Safety", "position": "Thirty years of experience tells me that visible, community-connected policing is the most effective deterrent.", "source": "https://davewilson2026.example.com" }],
+  "endorsements": [{ "endorser": "Test City Fraternal Order of Police", "source": "https://testcityfop.example.org/endorsements" }],
+  "campaign_finance": { "total_raised": "$28,000", "top_donors_or_sectors": ["Individual donors ($28,000)"], "source": "https://example.gov/campaign-finance/dave-wilson-2026" },
+  "notable_news": [{ "headline": "No public information found", "date": "No public information found", "summary": "No public information found", "source": "No public information found" }],
+  "official_links": { "website": "https://davewilson2026.example.com", "social": [] },
+  "sources": ["https://davewilson2026.example.com"],
+  "_failed_sources": [],
+  "last_researched": "2026-04-28"
+}

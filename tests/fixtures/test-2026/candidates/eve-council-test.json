@@ -1,0 +1,18 @@
+{
+  "id": "eve-council-test",
+  "name": "Eve Martinez",
+  "race_id": "council-1-test",
+  "party": "Independent",
+  "incumbent": false,
+  "summary": "Eve Martinez is a community organizer and former school board candidate running as an independent for City Council District 1.",
+  "background": { "current_role": "Community Organizer, District 1 Residents Alliance", "career": ["Community organizer (2018–present)"], "education": ["B.A. Sociology, Regional University, 2016"], "prior_offices": [] },
+  "track_record": [{ "claim": "Organized a 2025 petition signed by 1,400 District 1 residents opposing a proposed warehouse development on 3rd Street.", "source": "https://testcitygazette.example.com/2025-petition" }],
+  "stated_positions": [{ "issue": "Representation", "position": "District 1 residents have been treated as an afterthought in development decisions. I will make sure community voices come before developer interests.", "source": "https://evemartinez2026.example.com" }],
+  "endorsements": [],
+  "campaign_finance": { "total_raised": "$11,000", "top_donors_or_sectors": ["Individual small donors ($11,000)"], "source": "https://example.gov/campaign-finance/eve-martinez-2026" },
+  "notable_news": [{ "headline": "Martinez enters District 1 race as independent", "date": "2026-01-05", "summary": "Martinez announced her campaign, citing frustration with both party candidates' ties to development interests.", "source": "https://testcitygazette.example.com/2026-01-05" }],
+  "official_links": { "website": "https://evemartinez2026.example.com", "social": [] },
+  "sources": ["https://evemartinez2026.example.com"],
+  "_failed_sources": [],
+  "last_researched": "2026-04-28"
+}

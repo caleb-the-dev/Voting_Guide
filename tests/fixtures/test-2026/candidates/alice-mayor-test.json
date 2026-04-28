@@ -1,0 +1,39 @@
+{
+  "id": "alice-mayor-test",
+  "name": "Alice Johnson",
+  "race_id": "mayor-test",
+  "party": "Democratic",
+  "incumbent": true,
+  "summary": "Alice Johnson has served as Mayor of Test City since 2022. She previously worked as a city council member and urban planner before running for mayor.",
+  "background": {
+    "current_role": "Mayor of Test City (since 2022)",
+    "career": ["Urban planner, Test City Planning Dept (2010–2018)", "City Council Member, District 3 (2018–2022)"],
+    "education": ["B.A. Urban Studies, State University, 2008", "M.S. Public Policy, Regional University, 2010"],
+    "prior_offices": ["City Council Member, District 3 (2018–2022)"]
+  },
+  "track_record": [
+    { "claim": "Passed the 2024 Affordable Housing Ordinance, setting aside 15% of new development units as affordable.", "source": "https://example.gov/ordinance-2024-afh" },
+    { "claim": "Secured $12M federal grant for downtown infrastructure improvements in 2023.", "source": "https://example.gov/grants-2023" }
+  ],
+  "stated_positions": [
+    { "issue": "Housing", "position": "We need to build more housing at every income level while protecting longtime residents from displacement.", "source": "https://alicejohnson.example.com/platform" },
+    { "issue": "Public Safety", "position": "I support investing in both community policing and mental health crisis response teams.", "source": "https://alicejohnson.example.com/platform" }
+  ],
+  "endorsements": [
+    { "endorser": "Test City Teachers Union", "source": "https://tctunion.example.org/endorsements" },
+    { "endorser": "Test County Democratic Party", "source": "https://testcountydems.example.com/2026" }
+  ],
+  "campaign_finance": {
+    "total_raised": "$285,000",
+    "top_donors_or_sectors": ["Real estate developers ($42,000)", "Public employee unions ($38,000)", "Individual small donors ($125,000)"],
+    "source": "https://example.gov/campaign-finance/alice-johnson-2026"
+  },
+  "notable_news": [
+    { "headline": "Mayor Johnson wins national award for affordable housing initiative", "date": "2025-03-15", "summary": "The National League of Cities honored Johnson's 2024 ordinance as a model for mid-size cities.", "source": "https://nlc.example.org/awards-2025" },
+    { "headline": "Johnson criticized over delayed downtown construction timeline", "date": "2025-09-22", "summary": "Local business owners said the federal grant project fell 8 months behind schedule, citing permitting delays under the Johnson administration.", "source": "https://testcitygazette.example.com/2025-09-22" }
+  ],
+  "official_links": { "website": "https://alicejohnson.example.com", "social": ["https://twitter.example.com/alicejohnson"] },
+  "sources": ["https://alicejohnson.example.com", "https://ballotpedia.org/alice-johnson-test", "https://example.gov/campaign-finance/alice-johnson-2026"],
+  "_failed_sources": [],
+  "last_researched": "2026-04-28"
+}

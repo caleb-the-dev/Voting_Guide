@@ -1,0 +1,27 @@
+{
+  "election_slug": "test-2026",
+  "election_date": "2026-11-04",
+  "jurisdiction": "Test County",
+  "races": [
+    {
+      "id": "mayor-test",
+      "title": "Mayor of Test City",
+      "primary_party": null,
+      "candidates": [
+        { "id": "alice-mayor-test", "name": "Alice Johnson", "party": "Democratic", "incumbent": true },
+        { "id": "bob-mayor-test",   "name": "Bob Smith",     "party": "Republican", "incumbent": false }
+      ]
+    },
+    {
+      "id": "council-1-test",
+      "title": "City Council, District 1",
+      "primary_party": null,
+      "candidates": [
+        { "id": "carol-council-test", "name": "Carol Davis",   "party": "Democratic",  "incumbent": false },
+        { "id": "dave-council-test",  "name": "Dave Wilson",   "party": "Republican",  "incumbent": false },
+        { "id": "eve-council-test",   "name": "Eve Martinez",  "party": "Independent", "incumbent": false }
+      ]
+    }
+  ],
+  "_warnings": []
+}

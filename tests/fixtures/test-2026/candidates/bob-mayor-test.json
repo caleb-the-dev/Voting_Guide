@@ -1,0 +1,38 @@
+{
+  "id": "bob-mayor-test",
+  "name": "Bob Smith",
+  "race_id": "mayor-test",
+  "party": "Republican",
+  "incumbent": false,
+  "summary": "Bob Smith is a Test City business owner and former Chamber of Commerce president running for mayor on a platform of fiscal restraint and public safety.",
+  "background": {
+    "current_role": "Owner, Smith Hardware (since 2005)",
+    "career": ["Small business owner (2005–present)", "President, Test City Chamber of Commerce (2019–2023)"],
+    "education": ["B.B.A. Business Administration, Community College, 2003"],
+    "prior_offices": []
+  },
+  "track_record": [
+    { "claim": "Led Chamber of Commerce campaign that reduced city business licensing fees by 20% in 2021.", "source": "https://testcitychamber.example.org/2021-fees" }
+  ],
+  "stated_positions": [
+    { "issue": "Fiscal Policy", "position": "The city budget has grown 18% in four years. We need zero-based budgeting and a full audit before any new spending.", "source": "https://bobformayor.example.com/issues" },
+    { "issue": "Public Safety", "position": "I will restore full funding to the police department and end the experiment of diverting patrol resources to social workers.", "source": "https://bobformayor.example.com/issues" }
+  ],
+  "endorsements": [
+    { "endorser": "Test City Fraternal Order of Police", "source": "https://testcityfop.example.org/endorsements" },
+    { "endorser": "Test County Republican Party", "source": "https://testcountygop.example.com/2026" }
+  ],
+  "campaign_finance": {
+    "total_raised": "$178,000",
+    "top_donors_or_sectors": ["Local business owners ($89,000)", "Republican PAC contributions ($45,000)", "Individual small donors ($44,000)"],
+    "source": "https://example.gov/campaign-finance/bob-smith-2026"
+  },
+  "notable_news": [
+    { "headline": "Bob Smith wins Republican primary with 61% of vote", "date": "2026-03-10", "summary": "Smith beat two opponents in the primary, running strongly in the city's southern precincts.", "source": "https://testcitygazette.example.com/2026-03-10" },
+    { "headline": "Smith draws scrutiny over 2018 property dispute", "date": "2026-01-18", "summary": "A 2018 zoning dispute in which Smith appealed a neighbor's variance was surfaced by a local advocacy group, though no wrongdoing was alleged.", "source": "https://testcitygazette.example.com/2026-01-18" }
+  ],
+  "official_links": { "website": "https://bobformayor.example.com", "social": ["https://facebook.example.com/bobformayor"] },
+  "sources": ["https://bobformayor.example.com", "https://ballotpedia.org/bob-smith-test", "https://example.gov/campaign-finance/bob-smith-2026"],
+  "_failed_sources": [],
+  "last_researched": "2026-04-28"
+}

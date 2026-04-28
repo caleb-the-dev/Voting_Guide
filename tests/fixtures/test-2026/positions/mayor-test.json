@@ -1,0 +1,13 @@
+{
+  "id": "mayor-test",
+  "title": "Mayor of Test City",
+  "jurisdiction": "Municipal",
+  "term_length": "4 years",
+  "salary": "$95,000/year",
+  "responsibilities": "The mayor serves as the chief executive of the city, overseeing day-to-day municipal operations, presenting the annual budget, and representing the city in intergovernmental relations.",
+  "why_it_matters": "The mayor directly shapes city services—roads, parks, housing policy, public safety staffing—that affect residents daily. Decisions made in this office determine how tax dollars are spent locally.",
+  "key_powers": ["Proposes and signs city budget", "Appoints department heads", "Vetoes city council ordinances", "Issues emergency declarations"],
+  "this_cycle_context": "The incumbent is running for a second term. A key issue is the city's proposed downtown development plan and its impact on housing affordability.",
+  "sources": ["https://example.gov/mayor-office", "https://ballotpedia.org/mayor-test"],
+  "last_researched": "2026-04-28"
+}
