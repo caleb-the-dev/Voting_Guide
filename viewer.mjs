@@ -18,7 +18,10 @@ const MIME = {
 
 createServer(async (req, res) => {
   const url = new URL(req.url, `http://localhost:${PORT}`);
-  const rel = url.pathname === '/' ? 'app/index.html' : url.pathname.slice(1);
+  const pathname = url.pathname;
+  const rel = (pathname === '/' || pathname === '/app' || pathname === '/app/')
+    ? 'app/index.html'
+    : pathname.slice(1);
   const filePath = resolve(ROOT, rel);
   if (!filePath.startsWith(resolve(ROOT))) {
     res.writeHead(403);
