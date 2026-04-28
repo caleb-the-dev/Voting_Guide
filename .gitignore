@@ -1,0 +1,21 @@
+# Local Claude Code settings (per-user)
+.claude/settings.local.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Node (if we ever introduce a dev server)
+node_modules/
+npm-debug.log*
+
+# Python (if we ever use a tiny script)
+__pycache__/
+*.pyc
+.venv/
+
+# Personal voter state — picks/notes shouldn't be committed by default
+# (the app exports/imports JSON manually, so users can opt into committing their own picks)
+data/*/picks.json
