@@ -1,0 +1,14 @@
+{
+  "name": "voting-god",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node viewer.mjs",
+    "test": "npm run test:schema && npm run test:e2e",
+    "test:schema": "node --test tests/schema/validate.test.mjs",
+    "test:e2e": "npx playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0"
+  }
+}
