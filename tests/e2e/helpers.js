@@ -5,13 +5,8 @@ import { fileURLToPath } from 'node:url';
 const FIXTURES = join(fileURLToPath(import.meta.url), '..', '..', 'fixtures');
 
 export async function setupFixtures(page) {
-  await page.route('**/data/index.json', route => route.fulfill({
-    contentType: 'application/json',
-    body: JSON.stringify({
-      elections: [{ slug: 'test-2026', label: 'Test Election 2026', date: '2026-11-04' }]
-    })
-  }));
-
+  // Register wildcard first; Playwright evaluates routes LIFO, so the specific
+  // index.json handler (registered second) wins over the wildcard.
   await page.route('**/data/**', async route => {
     const url = new URL(route.request().url());
     const rel = url.pathname.replace(/^\/data\//, '');
@@ -23,4 +18,11 @@ export async function setupFixtures(page) {
       await route.fulfill({ status: 404, body: 'Not found' });
     }
   });
+
+  await page.route('**/data/index.json', route => route.fulfill({
+    contentType: 'application/json',
+    body: JSON.stringify({
+      elections: [{ slug: 'test-2026', label: 'Test Election 2026', date: '2026-11-04' }]
+    })
+  }));
 }
