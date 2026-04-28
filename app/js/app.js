@@ -24,7 +24,7 @@ async function router() {
       await renderCandidate(app, parts[0], parts[2]);
     } else if (parts.length === 3 && parts[1] === 'compare') {
       const { renderCompare } = await import('./compare.js');
-      await renderCompare(app, parts[0], parts[2]);
+      await renderCompare(app, parts[0], parts[2].split('?')[0]);
     } else {
       app.innerHTML = '<p class="error">Page not found.</p>';
     }
