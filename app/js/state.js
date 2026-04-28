@@ -1,5 +1,5 @@
 const key = (slug, type) => `vg:${slug}:${type}`;
-const getObj = k => JSON.parse(localStorage.getItem(k) || '{}');
+const getObj = k => { try { return JSON.parse(localStorage.getItem(k) || '{}'); } catch { return {}; } };
 const setObj = (k, v) => localStorage.setItem(k, JSON.stringify(v));
 
 export function getPick(slug, raceId)              { return getObj(key(slug, 'picks'))[raceId] || null; }

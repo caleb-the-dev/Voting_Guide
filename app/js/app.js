@@ -29,7 +29,11 @@ async function router() {
       app.innerHTML = '<p class="error">Page not found.</p>';
     }
   } catch (err) {
-    app.innerHTML = `<p class="error">Error: ${err.message}</p>`;
+    const p = document.createElement('p');
+    p.className = 'error';
+    p.textContent = `Error: ${err.message}`;
+    app.innerHTML = '';
+    app.appendChild(p);
     console.error(err);
   }
 }
