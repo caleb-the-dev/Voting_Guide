@@ -60,10 +60,12 @@ export async function renderPicks(app, slug) {
     app.querySelector('#btn-export').addEventListener('click', () => {
       const data = exportState(slug);
       const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
-      a.href = URL.createObjectURL(blob);
+      a.href = url;
       a.download = `voting-god-picks-${slug}.json`;
       a.click();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
     });
 
     app.querySelector('#btn-import').addEventListener('click', () => {
@@ -71,9 +73,14 @@ export async function renderPicks(app, slug) {
       input.type = 'file';
       input.accept = '.json';
       input.onchange = async e => {
-        const text = await e.target.files[0].text();
-        importState(slug, JSON.parse(text));
-        window.location.reload();
+        if (!e.target.files || e.target.files.length === 0) return;
+        try {
+          const text = await e.target.files[0].text();
+          importState(slug, JSON.parse(text));
+          window.location.reload();
+        } catch {
+          alert('Could not import picks: the file may be corrupted or not a valid picks export.');
+        }
       };
       input.click();
     });
