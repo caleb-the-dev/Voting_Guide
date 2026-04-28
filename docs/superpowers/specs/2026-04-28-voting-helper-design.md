@@ -1,4 +1,4 @@
-# Voting Helper — Design
+# Voting God — Design
 
 A local, single-user tool for researching and comparing candidates on an upcoming ballot. The user provides a sample ballot; an LLM-driven research pipeline produces structured per-candidate and per-position dossiers; a static web app renders them with drill-down, head-to-head comparison, picks tracking, and PDF export.
 
@@ -30,7 +30,7 @@ Three loosely-coupled layers:
 ### Folder layout
 
 ```
-Voting_Helper/
+Voting_God/
 ├── ballots/<election-slug>/sample.{pdf,txt,png,jpg}
 ├── data/<election-slug>/
 │   ├── races.json
