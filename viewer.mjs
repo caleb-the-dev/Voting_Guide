@@ -1,6 +1,6 @@
 import { createServer } from 'node:http';
 import { readFile } from 'node:fs/promises';
-import { join, extname } from 'node:path';
+import { join, extname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = fileURLToPath(new URL('.', import.meta.url));
@@ -18,9 +18,13 @@ const MIME = {
 
 createServer(async (req, res) => {
   const url = new URL(req.url, `http://localhost:${PORT}`);
-  const filePath = url.pathname === '/'
-    ? join(ROOT, 'app', 'index.html')
-    : join(ROOT, url.pathname.slice(1));
+  const rel = url.pathname === '/' ? 'app/index.html' : url.pathname.slice(1);
+  const filePath = resolve(ROOT, rel);
+  if (!filePath.startsWith(resolve(ROOT))) {
+    res.writeHead(403);
+    res.end('Forbidden');
+    return;
+  }
   try {
     const body = await readFile(filePath);
     res.writeHead(200, { 'Content-Type': MIME[extname(filePath)] || 'text/plain' });
