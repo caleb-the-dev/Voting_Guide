@@ -21,6 +21,7 @@ function getElectionDirs(base) {
 function assertValidRaces(races, filePath) {
   assert.ok(typeof races.election_slug === 'string', `${filePath}: election_slug must be a string`);
   assert.ok(typeof races.election_date === 'string', `${filePath}: election_date must be a string`);
+  assert.ok(typeof races.jurisdiction === 'string' && races.jurisdiction.length > 0, `${filePath}: jurisdiction must be a non-empty string`);
   assert.ok(Array.isArray(races.races), `${filePath}: races must be an array`);
   assert.ok(Array.isArray(races._warnings), `${filePath}: _warnings must be an array`);
   for (const race of races.races) {

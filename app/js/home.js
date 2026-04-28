@@ -1,6 +1,11 @@
 import { loadElections, loadRaces } from './data.js';
 import { getPick } from './state.js';
 
+function esc(s) {
+  if (s === null || s === undefined) return '';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+}
+
 function pillClass(status) {
   return { 'not-started': 'pill--not-started', 'reviewing': 'pill--reviewing', 'decided': 'pill--decided' }[status] || 'pill--not-started';
 }
@@ -31,8 +36,8 @@ async function renderElectionPicker(app, elections) {
     <ul class="races">
       ${elections.map(e => `
         <li class="race-row">
-          <a class="race-link" href="#/${e.slug}">${e.label}</a>
-          <span class="race-meta">${e.date}</span>
+          <a class="race-link" href="#/${e.slug}">${esc(e.label)}</a>
+          <span class="race-meta">${esc(e.date)}</span>
         </li>`).join('')}
     </ul>`;
 }
@@ -44,7 +49,7 @@ async function renderRaceList(app, slug, racesData) {
   app.innerHTML = `
     ${nav(slug)}
     <div class="race-list-header">
-      <h2>${racesData.jurisdiction} · ${racesData.election_date}</h2>
+      <h2>${esc(racesData.jurisdiction)} · ${esc(racesData.election_date)}</h2>
       <span class="progress">${decidedCount} of ${total} races decided</span>
     </div>
     <ul class="races">
@@ -52,7 +57,7 @@ async function renderRaceList(app, slug, racesData) {
         const status = raceStatus(slug, race);
         return `<li class="race-row">
           <a class="race-link" href="#/${slug}/race/${race.id}">
-            ${race.title}
+            ${esc(race.title)}
             <span class="race-meta">${race.candidates.length} candidate${race.candidates.length !== 1 ? 's' : ''}</span>
           </a>
           <span class="pill ${pillClass(status)}">${pillLabel(status)}</span>
